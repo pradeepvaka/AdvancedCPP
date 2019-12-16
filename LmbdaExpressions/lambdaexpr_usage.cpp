@@ -5,8 +5,13 @@
 using namespace std;
 
 
+void printLambda(void (*pFunc)(string)) {
+	pFunc("Hello");
+}
 int main()
 {
+	auto pGreet = [](string a) {cout << a << endl; };
+	printLambda(pGreet);
 	return 0;
 }
 
