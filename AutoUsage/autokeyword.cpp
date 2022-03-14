@@ -14,6 +14,8 @@ int get() {
 auto test2() -> decltype(get()) {
 	return get();
 }
+
+
 int main()
 {
 	auto value = 9;
@@ -21,6 +23,8 @@ int main()
 	cout << value <<" "<< text << endl;
 	cout<<test(2, 3) << endl;
 	cout<<test2() << endl;
+	cout << "Hello World!\n";
+	
 	return 0;
 }
 
